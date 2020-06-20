@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 10px;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: #fffaed;
+}
+
+a {
+  text-decoration: none;
+  background: none;
+  color: #e0c08e;
+}
+
+a:active {
+  background: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+hr {
+  width: 100%;
+  height: 4.5px;
+  background: #e0c08e;
+  margin-bottom: 2.5vh;
+  margin-top: -0.25vh;
+  border:0;
+  border-radius: 3px;
+  outline: none;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+// ------------------------------- Headlines
+
+h1 {
+  overflow-y: hidden;
+  font-family: 'Vollkorn';
+  font-weight: 900;
+  color: #462012;
+}
+
+h1.big {
+  width: 90%;
+  font-size: 5rem;
+  justify-self: center;
+  align-self: flex-start;
+  line-height: 1.25;
+  margin-bottom: 1vh;
+}
+
+h1.small {
+  font-size: 1.5rem;
+  justify-self: center;
+  margin-bottom: -0.5vh;
+}
+
+h1.menu_text {
+  margin-left: 10%;
+  font-size: 1.5rem;
+  margin-top: 1.25vh;
+}
+
+h2 {
+  overflow-y: hidden;
+  font-family: 'Vollkorn';
+  font-weight: 900;
+  color: #462012;
+  font-size: 2.5rem;
+  margin-top: 6vh;
+}
+
+h3 {
+  font-family: 'vollkorn';
+  font-weight: 700;
+  line-height: 1.5;
+  color: #613b33;
+  font-size: 1.75rem;
+}
+
+// ------------------------------- Paragrafs
+
+p {
+  overflow-y: hidden;
+  color: #352917;
+  text-align: left;
+  font-family: 'vollkorn';
+}
+
+p.big {
+  margin-top: 3vh;
+  font-size: 1.75rem;
+  line-height: 1.85;
+  font-weight: 700;
+}
+
+p.small {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.85;
+  font-family: 'Vollkorn';
+  color: #352917;
+}
+
+.vollkorn {
+  font-family: 'Vollkorn';
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+//quote
+
+q {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+// ------------------------------- Margin
+
+.margin_2 {
+  margin-top: 1vh;
+}
+
+.margin_4 {
+  margin-top: 4vh;
+}
+.margin_8 {
+  margin-top: 8vh;
+}
+
+// ------------------------------- Spine
+
+.flex {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+// ------------------------------- Menu bar
+
+.bar {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  flex-direction: row;
+  justify-self: center;
+}
+
+.logo {
+  width: 50%;
+  height: 5vh;
+  background: #e0c08e url(../../img/logo.png) center center no-repeat;
+  background-size: 50%;
+  background-position: center 52.5%;
+  border-radius: 3px;
+  align-self: center;
+  justify-self: flex-start;
+}
+
+.logo:active {
+  background: #dd9b9b url(../../img/logo.png) center center no-repeat;
+  background-size: 50%;
+}
+
+.menu {
+  width: 5vh;
+  height: 5vh;
+  background: #e0c08e url(../../img/menu.png) center center no-repeat;
+  background-size: 50%;
+  align-self: center;
+  margin-left: 2.5vh;
+  border-radius: 3px;
+}
+
+.menu:active {
+  background: #dd9b9b url(../../img/menu.png) center center no-repeat;
+  background-size: 50%;
+
+}
+
+.menu_open {
+  margin-top: 10vh;
+  position: absolute;
+  flex-direction: column;
+  width: 90%;
+  height: 20vh;
+  background: #e0c08e;
+  display: none;
+  justify-content: center;
+  box-shadow: 0 1vh 0 0 #cc9e72;
+}
+
+// ------------------------------- Feed
+
+.feed {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+}
+
+.date {
+  height: 2.5vh;
+  margin-top: 1vh;
+  align-self: flex-start;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #e0c08e;
+  border-radius: 3px;
+}
+
+.autor {
+  margin-top: 1vh;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 3vh;
+  background: #e0c08e;
+  border-radius: 3px;
+}
+
+// ------------------------------- flash
+
+.flash {
+  height: 3vh;
+  align-self: flex-end;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #e0c08e;
+  border-radius: 3px;
+}
+
+.flash:active {
+  background: #dd9b9b;
+}
+
+.flash_open {
+  width: 45%;
+  margin-left: 45%;
+  height: 34vh;
+  background: #e0c08e;
+  margin-top: 23vh;
+  border-radius: 3px;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.up_button {
+  background: #dd9b9b url(../../img/menu.png) center center no-repeat;
+  background-size: 50%;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 3px;
+  position: fixed;
+  margin-top: 85vh;
+  margin-left: 80%;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.up_button:active {
+  background: #e0c08e url(../../img/menu.png) center center no-repeat;
+  background-size: 50%;
+}
+
+// ------------------------------- Picture
+
+.picture {
+  justify-self:center;
+  align-self: center;
+  border-radius: 3px;
+}
+
+.picture_big {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.picture_in {
+  width: 100%;
+  margin-top: 2.5vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+// ------------------------------- Footer
+.footer {
+  margin-top: 2.5vh;
+  height: 7.5vh;
+  width: 100%;
+  background: #e0c08e;
+  display: flex;
+  align-items: center;
+}
+
+.footer.big {
+  margin:0;
+  margin-left: 5%;
+}
